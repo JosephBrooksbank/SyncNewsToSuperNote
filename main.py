@@ -61,5 +61,6 @@ if __name__ == '__main__':
         print("Couldn't log in to supernote cloud, exiting...")
         sys.exit(1)
 
+    download_news()
     upload_news()
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
