@@ -1,11 +1,13 @@
 import sys
-
+import os
 import supernote
 from dotenv import dotenv_values
 from datetime import datetime
 import subprocess
 
-config = dotenv_values('.env')
+dirname = os.path.dirname(__file__)
+env_file = os.path.join(dirname, '/.env')
+config = dotenv_values(env_file)
 
 sn_username = config['SUPERNOTE_USERNAME']
 sn_password = config['SUPERNOTE_PASSWORD']
