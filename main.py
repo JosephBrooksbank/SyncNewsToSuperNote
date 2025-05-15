@@ -6,7 +6,7 @@ from datetime import datetime
 import subprocess
 
 dirname = os.path.dirname(__file__)
-env_file = os.path.join(dirname, '/.env')
+env_file = os.path.join(dirname, '.env')
 config = dotenv_values(env_file)
 
 sn_username = config['SUPERNOTE_USERNAME']
